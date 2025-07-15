@@ -1,0 +1,12 @@
+package com.books.library_project.DAO;
+
+import com.books.library_project.entity.Book;
+
+import java.util.List;
+
+public interface BookDao {
+    public List<Book> findAll();
+    public Book findByid(Integer id);
+    public Book save(Book theBook);
+    public void deleteById(Integer id);
+}
